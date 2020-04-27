@@ -52,21 +52,6 @@ mutable struct Node{T1 <: Integer, T2 <: Number}
     Wr::Array{T2,2}
 end
 
-
-#Define node
-## type Node_Diag{T1 <: Integer, T2 <: Number}
-##     treeL::Union(Node_Diag,Leaf)
-##     treeR::Union(Node_Diag,Leaf)
-##     m::T1
-##     col_idx::T1
-##     depth::T1
-##     Rl::Array{T2,2}
-##     Rr::Array{T2,2}
-##     Wl::Array{T2,2}
-##     Wr::Array{T2,2}
-## end
-
-
 #Define FMM structure
 FMM = Union{Leaf,Node,LeafOffDiag}
 
